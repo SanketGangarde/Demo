@@ -45,4 +45,108 @@ accuracy
 
 error_rate=1-accuracy
 error_rate 
+
+
+
+
+What is the full form of pandas?
+A: Python Data Analysis Library.
+
+What is pandas used for?
+A: It’s used for data manipulation and analysis.
+
+What does pd.read_csv() do?
+A: It reads data from a CSV file into a DataFrame.
+
+How can you view the first few records of a DataFrame?
+A: Using data.head().
+
+What does data.tail() return?
+A: The last 5 rows of the DataFrame.
+
+How can you find the number of rows and columns?
+A: Using data.shape.
+
+How do you check for null or missing values?
+A: With data.isna().sum().
+
+What does data.describe() provide?
+A: Summary statistics of numeric columns.
+
+What is a DataFrame?
+A: A 2D, tabular data structure with labeled axes.
+
+What is the purpose of ["Age", "EstimatedSalary"] in your code?
+A: To select those two columns as features.
+
+What is the Purchased column used for?
+A: It is the target variable (label) in classification.
+
+What does train_test_split() do?
+A: Splits data into training and testing sets.
+
+What is test_size=0.2?
+A: It sets aside 20% of the data for testing.
+
+Why use random_state=0?
+A: To make results reproducible.
+
+Which algorithm are you using in the code?
+A: Logistic Regression.
+
+Is Logistic Regression a classification or regression algorithm?
+A: It is a classification algorithm.
+
+What type of problem does your dataset represent?
+A: Binary classification.
+
+How do you train a logistic regression model?
+A: Using model.fit(xtrain, ytrain).
+
+What does y_pred = model.predict(xtest) do?
+A: Predicts class labels for the test data.
+
+What does confusion_matrix() return?
+A: A matrix showing true positives, false positives, true negatives, and false negatives.
+
+What is a true positive?
+A: When the model correctly predicts the positive class.
+
+What is a false positive?
+A: When the model incorrectly predicts the positive class.
+
+What is a true negative?
+A: When the model correctly predicts the negative class.
+
+What is a false negative?
+A: When the model incorrectly predicts the negative class.
+
+How is accuracy calculated?
+A: Accuracy =𝑇𝑃 + 𝑇𝑁 / 𝑇𝑜𝑡𝑎𝑙
+
+What function is used to scale features in sklearn?
+A: StandardScaler() from sklearn.preprocessing.
+​
+ Q: Why did you choose Age and Salary?
+A: These are the most relevant features that might influence someone's buying decision. People with certain age ranges or income levels might be more likely to purchase.
+
+Q: What does the model output?
+A: It gives a 0 or 1 — where 1 means the model predicts the person will buy, and 0 means they won't.
+
+Q: Can your model give a probability instead of just 0 or 1?
+A: Yes! Using model.predict_proba(), we can get the probability that a person will buy the product.
+
+How does your model work? (Simple Explanation)
+“We are using a Logistic Regression model to predict whether a person will buy a product (like an ad on a social network) or not.
+The prediction is based on two input features:
+
+Age
+
+Estimated Salary
+
+The target variable is Purchased, which is either 1 (yes) or 0 (no).
+The model learns from historical data — it identifies patterns between people’s age/salary and whether they purchased or not — and then uses that to make predictions on new data.”
+
+
+
   
