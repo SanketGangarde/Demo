@@ -1,0 +1,48 @@
+import pandas as pd
+
+data = pd.read_csv("/home/dream-girl/Desktop/dsbda/dataset/Datasets/Social_Network_Ads.csv");
+
+data
+
+data.head()
+
+data.tail()
+
+data.shape
+
+data.describe()
+
+data.isna().sum()
+
+x =data[["Age","EstimatedSalary"]]
+y =data["Purchased"]
+
+
+from sklearn.model_selection import train_test_split
+xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=0.2, random_state=0)
+
+from sklearn.linear_model import LogisticRegression
+lm = LogisticRegression()
+model = lm.fit(xtrain,ytrain)
+
+y_pred = model.predict(xtest)
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(ytest, y_pred)
+print ("Confusion Matrix : \n", cm)  
+
+
+true_positive = 56
+true_negative = 17
+false_positive = 5
+false_negative = 17
+
+total = 100
+accuracy = (true_positive + true_negative) / total
+
+
+accuracy
+
+error_rate=1-accuracy
+error_rate 
+  
