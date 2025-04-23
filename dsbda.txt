@@ -149,4 +149,119 @@ The model learns from historical data — it identifies patterns between people�
 
 
 
-  
+What is Data Wrangling?
+Data Wrangling (also called data munging) is the process of:
+
+Collecting raw data.
+
+Cleaning missing, inconsistent, or incorrect values.
+
+Transforming and reshaping data to make it usable for analysis or modeling.
+
+
+ Categorical Values (Qualitative Data)
+These are discrete values that represent categories or labels.
+
+Meaning: They describe qualities or characteristics.
+
+Examples:
+
+Gender: Male, Female
+
+City: Pune, Delhi, Mumbai
+
+Blood type: A, B, AB, O
+
+Types:
+
+Nominal: No natural order (e.g., city, gender)
+
+Ordinal: Have a logical order (e.g., Low, Medium, High)
+
+ Continuous Values (Quantitative Data)
+These are numeric values that can take any value within a range.
+
+Meaning: They describe quantities or measurable things.
+
+Examples:
+
+Height: 170.5 cm
+
+Weight: 60.2 kg
+
+Age: 21
+
+Price: 99.99
+
+Can be decimals or integers.
+
+axis=0 → Rows
+
+axis=1 → Columns
+
+groupby in Pandas is a super useful tool when you want to group data based on one or more columns and then perform some operation (like sum, mean, count, etc.) on each group.
+
+Linear Regression
+✅ Use it when the target (output) is continuous — meaning, it can take on any real number. i.e Output is a numeric value.
+
+Logistic Regression
+✅ Use it when the target is categorical (usually binary — like Yes/No, 0/1, True/False).
+
+
+🌳 Where Do We Use Decision Trees?
+✅ Decision Trees are used for:
+Classification (categorical output)
+Regression (continuous output)
+Handles both numeric & categorical	    Can work with both types of data
+Works well with missing data	          Can make decisions even if some data is missing
+
+ Use in Regression
+When your target is a numeric value, like:
+Predicting house price
+Estimating age from certain features
+Predicting demand for a produc
+
+What is a Scatter Plot?
+A scatter plot is a graph that uses dots to represent the values of two numeric variables.
+Each dot shows one observation in the dataset.
+
+
+🔹 Matplotlib
+✅ Use When:
+You need full control over every aspect of the plot (customization).
+You are building complex or multi-step visualizations.
+You want to embed plots into applications (e.g., with Tkinter or Flask).
+
+You are working with basic plots like:
+Line plot
+Bar chart
+Scatter plot
+Histogram
+
+🔸 Seaborn
+✅ Use When:
+You want beautiful, statistical visualizations quickly.
+You are working with DataFrames (Seaborn works directly with pandas).
+You want to analyze patterns in categorical or numerical data.
+
+You want plots like:
+
+Box plot
+Violin plot
+Heatmap
+Pair plot
+Distribution plot
+
+
+What is a Confusion Matrix?  use to comparing actual and predicted values.
+
+✅ Terms You Should Know:
+True Positive (TP): Model predicted yes, and it was actually yes.
+
+True Negative (TN): Model predicted no, and it was actually no.
+
+False Positive (FP): Model predicted yes, but it was no. (Type I Error)
+
+False Negative (FN): Model predicted no, but it was yes. (Type II Error)
+
+
